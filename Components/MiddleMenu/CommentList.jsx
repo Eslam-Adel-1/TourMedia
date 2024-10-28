@@ -14,8 +14,14 @@ const CommentList = async ({ postId }) => {
       <div className=" w-full h-[1px] bg-gray-200 mt-4"></div>
 
       <h3 className="font-medium text-gray-400 my-3">Comments</h3>
-      {comments.map((item) => {
-        return <Comment content={item.content} commenterId={item.userId} />;
+      {comments.map((item, index) => {
+        return (
+          <Comment
+            content={item.content}
+            commenterId={item.userId}
+            key={index}
+          />
+        );
       })}
     </>
   );

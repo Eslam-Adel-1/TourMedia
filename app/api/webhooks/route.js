@@ -141,7 +141,7 @@ export async function POST(req) {
           { $set: { active: false } }
         );
         if (!user) {
-          console.error("No user found in the datab ase");
+          console.error("No user found in the database");
         }
       } catch (err) {
         console.error(err.message);

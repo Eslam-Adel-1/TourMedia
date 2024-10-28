@@ -1,6 +1,6 @@
 import FriendRequestButton from "../FriendRequestButton";
 import IgnoreFriend from "../IgnoreFriend";
-import AddFriendButton from "../addFriendButton";
+import AddFriendButton from "../AddFriendButton";
 
 const FriendRequest = ({ name, avatar, id }) => {
   return (
